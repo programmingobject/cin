@@ -9,7 +9,9 @@
 import unittest
 
 
-from opr.objects import Object, items, keys, kind, prt, update, values
+from opr.objects import Object, items, keys, update, values
+from opr.storage import kind
+from opr.utility import prt
 
 
 VALIDJSON = '{"test": "bla"}'
