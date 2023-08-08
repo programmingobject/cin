@@ -50,8 +50,7 @@ DIFF = [
 DIFF = [
         '__dict__',
         '__module__',
-        '__oid__',
-        '__slots__'
+        '__weakref__'
        ]
 OBJECT = Object()
 

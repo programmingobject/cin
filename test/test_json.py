@@ -12,6 +12,7 @@ import unittest
 from opr.decoder import loads
 from opr.encoder import dumps
 from opr.objects import Object
+from opr.persist import Persist
 
 
 VALIDJSON = "{'test': 'bla'}"
@@ -32,4 +33,5 @@ class TestEncoder(unittest.TestCase):
     def test_dumps(self):
         obj = Object()
         obj.test = "bla"
+        print(dumps(obj))
         self.assertEqual(dumps(obj), VALIDPYTHON)

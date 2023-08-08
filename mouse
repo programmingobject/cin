@@ -1,1 +1,1 @@
-usb_resetter --hub /sys/bus/usb/devices/1-9
+/home/bart/.local/bin/usb_resetter --hub /sys/bus/pci/drivers/xhci_hcd/0000:00:14.0 --reset-hub
