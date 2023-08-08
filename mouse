@@ -1,0 +1,1 @@
+usb_resetter --hub /sys/bus/usb/devices/1-9
