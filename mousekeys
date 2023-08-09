@@ -1,0 +1,5 @@
+gsettings set org.gnome.desktop.a11y.keyboard mousekeys-max-speed 4000;
+gsettings set org.gnome.desktop.a11y.keyboard mousekeys-init-delay 10;
+gsettings set org.gnome.desktop.a11y.keyboard mousekeys-accel-time 4000;
+gsettings set org.gnome.desktop.a11y.keyboard mousekeys-enable true;
+xkbset ma 10 10 10 20 10
