@@ -9,14 +9,13 @@
 import unittest
 
 
-from opr.decoder import loads
-from opr.encoder import dumps
-from opr.objects import Object
+from opr.objects import Object, dumps, loads
 from opr.persist import Persist
 
 
 VALIDJSON = "{'test': 'bla'}"
 VALIDPYTHON = '{"test": "bla"}'
+VALIDPYTHON = '{"test": "bla", "__type__": "opr.objects.Object"}'
 
 
 class TestDecoder(unittest.TestCase):
