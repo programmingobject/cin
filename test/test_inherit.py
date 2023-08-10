@@ -10,7 +10,7 @@ import unittest
 
 
 from opr.objects import Object
-
+from opr.persist import Persist
 
 class A(Object):
 
@@ -47,19 +47,24 @@ class H(dict):
     pass
 
 
-# class I(object):
+class I(object):
 
-#    pass
-
-
-# class J(A, I):
-
-#    pass
+   pass
 
 
-# class K(J, H):
+class J(A, I):
 
-#    pass
+   pass
+
+
+class K(J, H):
+
+   pass
+
+
+class Persisted(A, Persist):
+
+   pass
 
 
 class TestInherit(unittest.TestCase):
@@ -83,3 +88,19 @@ class TestInherit(unittest.TestCase):
     def testinherit5(self):
         h = H()
         self.assertEqual(type(h), H)
+
+    def testinherit6(self):
+        i = I()
+        self.assertEqual(type(i), I)
+
+    def testinherit5(self):
+        j = J()
+        self.assertEqual(type(j), J)
+
+    def testinherit5(self):
+        k = K()
+        self.assertEqual(type(k), K)
+
+    def testinheritpersist(self):
+       per = Persisted()
+       self.assertTrue(per.__oid__)
