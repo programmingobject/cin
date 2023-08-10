@@ -10,8 +10,8 @@ import unittest
 
 
 from opr.objects import Object, items, keys, update, values
+from opr.objfunc import prt
 from opr.storage import kind
-from opr.utility import prt
 
 
 VALIDJSON = '{"test": "bla"}'
